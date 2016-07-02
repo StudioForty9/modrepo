@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+
+if (file_exists(__DIR__.'/../../autoload.php')) {
+    require __DIR__.'/../../autoload.php';
+} else {
+    require __DIR__.'/../vendor/autoload.php';
+}
+
+$application = new \Modrepo\Console\Application('Magento Module Repository Generator', '1.0.0');
+$application->setConfigPath($_SERVER['HOME'] . DIRECTORY_SEPARATOR . '.modrepo.yml');
+$application->run();

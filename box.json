@@ -1,0 +1,15 @@
+{
+  "chmod": "0755",
+  "files": [],
+  "directories": ["src", "vendor"],
+  "finder": [
+    {
+      "name": "*.php",
+      "exclude": ["Tests"],
+      "in": "vendor"
+    }
+  ],
+  "main": "bin/modrepo",
+  "output": "modrepo.phar",
+  "stub": true
+}

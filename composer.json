@@ -1,0 +1,28 @@
+{
+    "name": "studioforty9/modrepo",
+    "description": "A command line tool for creating Magento module repositories.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eoghan O'Brien",
+            "email": "eoghan@eoghanobrien.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Modrepo\\": "src/"
+        }
+    },
+    "require": {
+        "symfony/console": "3.1.2",
+        "symfony/config": "3.1.2",
+        "symfony/yaml": "3.1.2",
+        "symfony/dependency-injection": "3.1.2",
+        "symfony/process": "3.1.2",
+        "symfony/finder": "3.1.2",
+        "symfony/filesystem": "3.1.2",
+        "andkirby/modman-generator": "0.1.9",
+        "gentle/bitbucket-api": "0.8.1",
+        "padraic/phar-updater": "1.0.3"
+    }
+}
